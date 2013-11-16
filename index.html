@@ -6,31 +6,52 @@
       /*
       http://www.wheattime.com/images-tables-and-mysterious-gaps.html
      */
+
       	td img {display: block;}
-      	div{
-      	  display:inline-block;
-      	  margin:auto;
-      	}
-      	#myself {
-      	  border: 1px solid block;
-      	  margin:10px 10px 10px 10px;
-      	  padding:0px;
-      	}
+	.aboutme {
+	  display: inline-block;
+	  margin:60px 60px 60px 60px;
+	}
+	.intro {
+	  display:inline-block;
+	  vertical-align:top;
+	}
+	.myself1{
+	  background-color:red;
+	}
       	#mypicture {
-      	  margin:10px 10px 10px 10px;
+	  display:inline-block;
       	}
+	.contactme {
+	  height:50px;
+	  width:100px;
+	  border:2px solid blue;
+	  border-radius:5px;
+	  background-color:blue;
+	  color:red;
+	  display:inline-block;
+	}
+	a {
+	  color:red;
+	  text-decoration: none;
+	}
       </style>
   </head>
   <body>
-      <h1 style="font-family:Garamond">Chingliu YU</h1>
-      <div id="myself">
+     <div class="aboutme">
+      <div class="intro">
+       <div class="myself1">
+	<h1 style="font-family:Garamond">Chingliu YU</h1>
         <p>A programmer,c,c++,python,lua</p>
         <p>A silent man</p>
         <p>Have a little daughter</p>
-        <p><a href="mailto:chingliuyu@gmail.com">mail me</a></p>
-        <p><a href="http://chingliu.github.io/WorkingHistory">Work</a></p>
-        <p><a href="http://chingliu.github.io/BlogComment/">Comment</a></p>
       </div>
+      <div class="myself2">
+         <div class="contactme"><a href="mailto:chingliuyu@gmail.com">mail me</a></div>
+         <div class="contactme"><a href="http://chingliu.github.io/WorkingHistory">Work</a></div>
+         <div class="contactme"><a href="http://chingliu.github.io/BlogComment/">Comment</a></div>
+      </div>
+     </div>
       <div id="mypicture">
         <table border="0" id="mypicture" cellspacing="0 px" cellpadding="0 px">
         	<tr>
@@ -50,5 +71,6 @@
         	</tr>
         </table>
       </div>
+    </div>
   </body>
 </html>
