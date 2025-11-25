@@ -263,6 +263,11 @@
 		{
 			var elements = "";
 			elements += "<canvas id=\"id_viewer\" class=\"block_elem\" style=\"left:0px;top:0px;width:100;height:100;\"></canvas>";
+			elements += "<div id=\"id_viewer_hint\" style=\"position:absolute; left:0; top:0; width:100%; height:100%;";
+			elements += "display:flex; align-items:center; justify-content:center;";
+			elements += "color:#666; font-size:18px; pointer-events:none;\">";
+			elements += "拖动 PDF/OFD 文件到此释放即可开始阅读";
+			elements += "</div>";			
 			elements += "<canvas id=\"id_overlay\" class=\"block_elem\" style=\"left:0px;top:0px;width:100;height:100;\"></canvas>";
 			elements += "<div id=\"id_vertical_scroll\" class=\"block_elem\" style=\"display:none;left:0px;top:0px;width:0px;height:0px;\"></div>";
 			elements += "<div id=\"id_horizontal_scroll\" class=\"block_elem\" style=\"display:none;left:0px;top:0px;width:0px;height:0px;\"></div>";
@@ -783,6 +788,9 @@
 		this.onDocumentReady = function()
 		{
 			var _t = this;
+			var hint = document.getElementById("id_viewer_hint");
+			if (hint)
+				hint.style.display = "none";			
 			// в интерфейсе есть проблема - нужно посылать onDocumentContentReady после setAdvancedOptions
 			setTimeout(function(){
 
