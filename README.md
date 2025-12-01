@@ -99,7 +99,7 @@ git push origin main
 
 ## 文件说明
 
-- `docs/engine/drawingfile.wasm` - 核心的WebAssembly模块，负责PDF解析和渲染
+- `docs/engine/drawingfile.wasm` - 核心的WebAssembly模块，负责PDF/OFD解析和渲染
 - `docs/engine/drawingfile.js` - WebAssembly模块的JavaScript包装器
 - `docs/js/viewer.js` - PDF查看器的主要逻辑
 - `docs/js/file.js` - PDF文件处理逻辑
