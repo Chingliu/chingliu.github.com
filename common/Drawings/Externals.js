@@ -1140,6 +1140,10 @@
 	var g_font_files, g_font_infos;
 	function checkAllFonts()
     {
+        if(window['AscFonts'] && window['AscFonts'].g_font_files)
+        {
+            return;
+        }
         var i, l;
         var files = window["__fonts_files"];
 		if (!files && window["native"] && window["native"]["GenerateAllFonts"])
